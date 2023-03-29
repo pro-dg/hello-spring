@@ -35,4 +35,11 @@ public class MemoryMemberRepository implements MemberRepository{
     public List<Member> findAll() {
         return store.values().stream().toList();
     }
+
+    @Override
+    public void clearStore() {
+        store.clear();
+    }
+
+
 }
