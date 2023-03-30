@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div class="container">
+    <form action="/members/new" method="post">
+        <div class="form-group">
+            <label for="name">이름</label>
+<!--            name="name" 부분이 Member 객체의 name 필드와 매핑된다. -->
+            <input type="text" name="name" id="name" class="form-control" placeholder="이름을 입력하세요">
+        </div>
+        <button type="submit" class="btn btn-primary">회원 가입</button>
+    </form>
+</div>
+
+</body>
+
+</html>
