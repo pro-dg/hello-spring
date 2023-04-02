@@ -48,8 +48,7 @@ public class JPAMemberRepository implements MemberRepository {
                 .getResultList();
     }
 
-    @Override
     public void clearStore() {
-
+        em.createQuery("delete from Member").executeUpdate();
     }
 }

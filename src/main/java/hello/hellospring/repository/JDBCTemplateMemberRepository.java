@@ -50,7 +50,7 @@ public class JDBCTemplateMemberRepository implements MemberRepository{
         return jdbcTemplate.query("select * from member", memberRowMapper());
     }
 
-    @Override
+
     public void clearStore() {
         jdbcTemplate.update("delete from member");
     }
