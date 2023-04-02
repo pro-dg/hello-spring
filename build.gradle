@@ -17,9 +17,14 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	// jdbc
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+//	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	// h2
 	runtimeOnly 'com.h2database:h2'
+
+	// jpa. 여기엔 jdbc도 포함되어있음
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+
 
 	// hemcrest
 	testImplementation 'org.hamcrest:hamcrest:2.2'
